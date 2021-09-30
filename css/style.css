@@ -464,7 +464,6 @@ ul {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--section-services-gap));
   margin-top: calc(-1 * var(--section-services-gap));
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .services-item {
@@ -477,6 +476,7 @@ ul {
 }
 .services-link:hover,
 .services-link:focus {
+  transform: translateY(0);
   display: block;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
@@ -485,16 +485,12 @@ ul {
 
 .services-overlay {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-/* .services-overlay:focus,
-.services-overlay:hover {
-  /* display: none; */
-} */
 
 .overlay-text:focus,
 .overlay-text:hover {
-  transform: translateY(0%);
+  transform: translateY(0);
 }
 .overlay-text {
   position: absolute;
